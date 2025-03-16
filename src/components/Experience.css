@@ -1,0 +1,94 @@
+.experience {
+    background: #f8f9fa;
+    padding: 50px 10%;
+    text-align: center;
+  }
+  
+  /* Section Title */
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .section-title::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: #3498db;
+    display: block;
+    margin: 8px auto;
+  }
+  
+  /* Timeline Container */
+  .timeline {
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+  }
+  
+  /* Vertical Center Line */
+  .timeline::before {
+    content: "";
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: #3498db;
+  }
+  
+  /* Timeline Item */
+  .timeline-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 40px;
+  }
+  
+  /* Left section: Date */
+  .timeline-left {
+    width: 190px; /* Fixed width to keep alignment */
+    padding-left: 3.5rem;
+    text-align: right;
+    padding-right: 20px;
+  }
+  
+  .timeline-date {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #3498db;
+    display: block;
+    white-space: nowrap;
+  }
+  
+  /* Timeline Icon */
+  .timeline-icon {
+    width: 30px;
+    height: 30px;
+    background: #3498db;
+    border-radius: 50%;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+    left: 31px;
+    transform: translateX(-50%);
+  }
+  
+  /* Timeline Content */
+  .timeline-content {
+    flex: 1;
+    text-align: left;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 60px;
+  }
+  

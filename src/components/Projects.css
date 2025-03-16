@@ -1,0 +1,70 @@
+.projects {
+    background: #f8f9fa;
+    padding: 80px 10%;
+    text-align: center;
+  }
+  
+  /* Section Title */
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .section-title::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: #3498db;
+    display: block;
+    margin: 8px auto;
+  }
+  
+  /* Projects Container */
+  .projects-container {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Project Card */
+  .project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .project-card h3 {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #374054;
+    margin: 0;
+  }
+  
+  .project-card p {
+    font-size: 1em;
+    color: #74808a;
+    margin: 5px 0;
+  }
+  
+  /* Tech Badge */
+  .project-tech {
+    margin-top: 10px;
+  }
+  
+  .tech-badge {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    margin-right: 5px;
+  }
+  

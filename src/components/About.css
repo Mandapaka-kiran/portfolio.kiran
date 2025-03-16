@@ -1,0 +1,44 @@
+.about {
+    background: white;
+    padding: 100px 10%;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .section-title::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: #3498db;
+    display: block;
+    margin: 8px auto;
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .about-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .about-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: left;
+  }
+  

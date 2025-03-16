@@ -1,0 +1,58 @@
+.home-container {
+    height: 100vh;
+    background: url("https://sibtain-portfolio.netlify.app/images/lead-bg.jpg") no-repeat center center/cover;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .home-container1{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1;
+    background: rgba(33, 125, 187, 0.8);
+  }
+  .home-content {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .lead-content-h2{
+    color: #e0ebea;
+    font-weight: 500;
+    font-size: 3em;
+    margin-bottom: 15px;
+  }
+  .lead-content {
+    color: #deedec;
+    font-weight: 900;
+    font-size: 4.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 0.9em;
+  }
+  .btn {
+    display: inline-block;
+    color: #fff;
+    padding: 15px 25px;
+    border: 3px solid #fff;
+    border-radius: 30px;
+    transition: 0.5s ease all;
+  }
+  @media only screen and (max-width: 992px) {
+    #lead-content {
+        position: relative;
+        transform: none;
+        left: auto;
+        top: auto;
+    }
+}

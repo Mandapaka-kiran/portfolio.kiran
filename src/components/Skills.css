@@ -1,0 +1,66 @@
+.skills {
+    background: #f8f9fa;
+    padding: 80px 10%;
+    text-align: center;
+  }
+  
+  /* Section Title */
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .section-title::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: #3498db;
+    display: block;
+    margin: 8px auto;
+  }
+  
+  /* Skills Container */
+  .skills-container {
+    max-width: 900px;
+    margin: auto;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  
+  .skills-container h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #374054;
+  }
+  
+  /* Technical Skills */
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .skill-badge {
+    background: #3498db;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: inline-block;
+  }
+  
+  /* Soft Skills */
+  .soft-skills-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .soft-skills-list li {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #74808a;
+  }
+  
