@@ -1,94 +1,163 @@
 .experience {
-    background: #f8f9fa;
-    padding: 50px 10%;
-    text-align: center;
+  background: #f8f9fa;
+  padding: 50px 10%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background: #3498db;
+  display: block;
+  margin: 8px auto;
+}
+
+.timeline {
+  max-width: 900px;
+  margin: auto;
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #3498db;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 40px;
+  flex-wrap: wrap; /* Ensure content wraps for small screens */
+}
+
+.timeline-left {
+  width: 190px;
+  padding-left: 3.5rem;
+  text-align: right;
+  padding-right: 20px;
+  flex: 1 1 100%; /* Allow the left section to take full width on small screens */
+}
+
+.timeline-date {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #3498db;
+  display: block;
+  white-space: nowrap;
+}
+
+.timeline-icon {
+  width: 30px;
+  height: 30px;
+  background: #3498db;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1rem;
+  position: absolute;
+  left: 31px;
+  transform: translateX(-50%);
+}
+
+.timeline-content {
+  flex: 1;
+  text-align: left;
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 60px;
+}
+
+@media only screen and (max-width: 768px) {
+  .experience {
+      padding: 30px 10%; /* Adjust padding on small screens */
   }
-  
-  /* Section Title */
+
   .section-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 40px;
-    position: relative;
-    display: inline-block;
+      font-size: 2rem; /* Adjust title font size */
   }
-  
-  .section-title::after {
-    content: "";
-    width: 50px;
-    height: 3px;
-    background: #3498db;
-    display: block;
-    margin: 8px auto;
-  }
-  
-  /* Timeline Container */
-  .timeline {
-    max-width: 900px;
-    margin: auto;
-    position: relative;
-  }
-  
-  /* Vertical Center Line */
-  .timeline::before {
-    content: "";
-    position: absolute;
-    left: 30px;
-    top: 0;
-    bottom: 0;
-    width: 3px;
-    background: #3498db;
-  }
-  
-  /* Timeline Item */
-  .timeline-item {
-    display: flex;
-    align-items: center;
-    position: relative;
-    margin-bottom: 40px;
-  }
-  
-  /* Left section: Date */
+
   .timeline-left {
-    width: 190px; /* Fixed width to keep alignment */
-    padding-left: 3.5rem;
-    text-align: right;
-    padding-right: 20px;
+      text-align: left; /* Align left section to the left */
+      width: auto;
+      padding-left: 0;
+      padding-right: 0;
   }
-  
-  .timeline-date {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #3498db;
-    display: block;
-    white-space: nowrap;
+
+  .timeline-item {
+      flex-direction: column; /* Stack timeline items vertically */
+      align-items: flex-start;
+      margin-bottom: 30px; /* Reduce margin for mobile */
   }
-  
-  /* Timeline Icon */
-  .timeline-icon {
-    width: 30px;
-    height: 30px;
-    background: #3498db;
-    border-radius: 50%;
-    display: flex
-;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 1rem;
-    position: absolute;
-    left: 31px;
-    transform: translateX(-50%);
+
+  .timeline-left .timeline-date {
+      font-size: 0.9rem; /* Slightly smaller font for the date */
   }
-  
-  /* Timeline Content */
+
   .timeline-content {
-    flex: 1;
-    text-align: left;
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    margin-left: 60px;
+      margin-left: 0;
+      width: 100%; /* Ensure content width is 100% */
+      padding: 15px; /* Reduced padding */
   }
-  
+
+  .timeline::before {
+      left: 20px; /* Adjust left position for mobile */
+  }
+
+  .timeline-icon {
+      left: 50%;
+      transform: translateX(-50%); /* Center the icon on mobile */
+  }
+
+  /* Remove the blue line and the location icon on mobile */
+  .timeline::before {
+    display: none; /* Hide the blue line */
+  }
+
+  .timeline-icon {
+    display: none; /* Hide the location icon */
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .timeline-date {
+      font-size: 0.85rem; /* Make the date text a bit smaller for very small screens */
+  }
+
+  .timeline-icon {
+      width: 25px;
+      height: 25px;
+      font-size: 0.8rem; /* Adjust icon size for very small screens */
+  }
+
+  .timeline-content {
+      padding: 10px; /* Further reduce padding for very small screens */
+  }
+
+  .section-title {
+      font-size: 1.8rem; /* Further reduce font size of the title */
+  }
+
+  .experience {
+      padding: 20px 5%; /* Further reduce padding for mobile */
+  }
+}

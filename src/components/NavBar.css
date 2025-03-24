@@ -2,10 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.2 rem;
+    font-size: 1.2rem;
     padding: 0 30px;
     background-color: #222;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
     width: 95%;
     height: 80px;
     border-radius: 13px;
@@ -17,67 +17,99 @@
 }
 
 .logo {
-    color: #ffff;
+    color: #fff;
     justify-self: start;
     cursor: pointer;
 }
-.nav-menu{
+
+.nav-menu {
     display: grid;
-    grid-template-columns: repeat(7,auto);
+    grid-template-columns: repeat(7, auto);
     grid-gap: 10px;
     list-style: none;
     align-items: center;
     text-align: center;
     justify-content: end;
 }
-.nav-links{
+
+.nav-links {
     text-decoration: none;
     color: #fff;
     padding: 0.7rem 1rem;
     white-space: nowrap;
-
 }
+
 .nav-links:hover {
     background: rgb(80, 80, 238);
     border-radius: 4px;
-    transition: all 0.2s ease-in-out;;
+    transition: all 0.2s ease-in-out;
 }
+
 .fa-bars,
 .fa-times {
     color: white;
 }
+
 .menu-icons {
     display: none;
 }
-@media screen and (max-width : 850px) {
-    .NavbarItems{
-        z-index:99;
+
+@media screen and (max-width: 768px) {
+    .NavbarItems {
+        z-index: 99;
     }
+
+    /* Initially hide the mobile menu */
     .nav-menu {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        background: rgba(255,255,255,.25);
-        box-shadow: 0 8px 32px 0 rgba(31,38,135,37);
+        background: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 37);
         backdrop-filter: blur(4px);
         border-radius: 13px;
-        width: 100%;
+        width: 80%; /* Limit the width to 80% */
+        max-width: 400px; /* Add a max width */
         height: auto;
         position: absolute;
         top: 0;
-        left: 0%;
-        align-items: stretch;
-        padding: 80px 0 30px 0;
+        left: 50%; /* Center the menu */
+        transform: translateX(-50%); /* This ensures it's centered */
+        padding: 60px 0 30px 0; /* Adjust padding to fit properly */
         margin: 0;
+        visibility: hidden; /* Menu starts off hidden */
+        opacity: 0; /* Start with opacity 0 */
+        transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
     }
+
     .nav-links {
         display: block;
-        widows: 100%;
-        padding: 2rem 0;
+        width: 100%;
+        padding: 1rem 0;
         color: #222;
+        text-align: center;
     }
+
     .nav-links:hover {
-        background-color: rgba(255,255,255,0.25);
+        background-color: rgba(255, 255, 255, 0.25);
         backdrop-filter: blur(20px);
     }
+
+    .menu-icons {
+        display: block; /* Shows the menu icon for mobile screens */
+        font-size: 30px;
+        cursor: pointer;
+        color: white;
+    }
+
+    /* When active, make the menu visible */
+    .nav-menu.active {
+        visibility: visible;
+        opacity: 1; /* Fade the menu in */
+    }
+}
+
+/* Ensure content is not hidden behind the navbar */
+body {
+    margin-top: 100px; /* Adjust this if the navbar height changes */
 }

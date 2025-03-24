@@ -1,8 +1,14 @@
 import React, { useState } from "react";
 import "./NavBar.css";
 
-const Navbar = ({ scrollToSection, homeRef, aboutRef, experienceRef,educationRef,projectRef,skillsRef,contatctRef }) => {
+const Navbar = ({ scrollToSection, homeRef, aboutRef, experienceRef, educationRef, projectRef, skillsRef, contactRef }) => {
   const [clicked, setClicked] = useState(false);
+
+  // Function to handle link click and close the menu
+  const handleLinkClick = (sectionRef) => {
+    scrollToSection(sectionRef);
+    setClicked(false); // Close the menu when a link is clicked
+  };
 
   return (
     <nav className="NavbarItems">
@@ -11,13 +17,13 @@ const Navbar = ({ scrollToSection, homeRef, aboutRef, experienceRef,educationRef
         <i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>
       </div>
       <ul className={clicked ? "nav-menu active" : "nav-menu"}>
-        <li onClick={() => scrollToSection(homeRef)} className="nav-links">Home</li>
-        <li onClick={() => scrollToSection(aboutRef)} className="nav-links">About</li>
-        <li onClick={() => scrollToSection(experienceRef)} className="nav-links">Experience</li>
-        <li onClick={() => scrollToSection(educationRef)} className="nav-links">Education</li>
-        <li onClick={() => scrollToSection(projectRef)} className="nav-links">Projects</li>
-        <li onClick={() => scrollToSection(skillsRef)} className="nav-links">Skills</li>
-        <li onClick={()=>scrollToSection(contatctRef)} className="nav-links">Contact</li>
+        <li onClick={() => handleLinkClick(homeRef)} className="nav-links">Home</li>
+        <li onClick={() => handleLinkClick(aboutRef)} className="nav-links">About</li>
+        <li onClick={() => handleLinkClick(experienceRef)} className="nav-links">Experience</li>
+        <li onClick={() => handleLinkClick(educationRef)} className="nav-links">Education</li>
+        <li onClick={() => handleLinkClick(projectRef)} className="nav-links">Projects</li>
+        <li onClick={() => handleLinkClick(skillsRef)} className="nav-links">Skills</li>
+        <li onClick={() => handleLinkClick(contactRef)} className="nav-links">Contact</li>
       </ul>
     </nav>
   );
