@@ -10,7 +10,7 @@ const experiences = [
       "Developed and maintained Spring Boot microservices for payment processing, integrated banking APIs, and optimized real-time transactions using Apache Kafka.",
   },
   {
-    date: "Sep 2024 – May 2024",
+    date: "Sep 2023 – May 2024",
     company: "EFUND TECHNICAL SERVICES PRIVATE LIMITED",
     role: "Software Application Developer",
     description:
