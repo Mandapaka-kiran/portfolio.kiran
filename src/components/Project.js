@@ -5,7 +5,7 @@ const projectsData = [
   {
     title: "Fisec Gen AI Liquidity Management",
     role: "Software Application Developer",
-    duration: "Dec 2024 – Present",
+    duration: "Nov 2024 – Present",
     description:
       "An embedded payments platform streamlining financial transactions, fraud detection, and seamless payment integrations.",
     technologies: ["Spring Boot", "Spring AI", "Apache Kafka", "PostgreSQL", "MongoDB", "AWS (EC2, RDS, S3)", "GitHub"],
@@ -13,7 +13,7 @@ const projectsData = [
   {
     title: "IDP (Wells Fargo)",
     role: "Software Application Developer",
-    duration: "March 2024 – Dec 2024",
+    duration: "Jan 2023 – Nov 2024",
     description:
       "A developer portal offering accelerators and managed services for streamlined development lifecycles.",
     technologies: ["Spring Boot", "Apache Kafka", "PostgreSQL", "Jenkins", "JUnit", "Mockito", "SonarQube"],
@@ -21,7 +21,7 @@ const projectsData = [
   {
     title: "EFundZZ",
     role: "Software Associate",
-    duration: "March 2022 – Feb 2024",
+    duration: "Sep 2023 – May 2024",
     description:
       "A fintech platform for digital financial services like lending, insurance, and investments.",
     technologies: ["Spring Boot", "Spring Security", "Hibernate", "PostgreSQL", "AWS", "Jenkins"],

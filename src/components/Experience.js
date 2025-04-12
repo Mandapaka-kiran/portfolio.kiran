@@ -3,25 +3,25 @@ import "./Experience.css";
 
 const experiences = [
   {
-    date: "Dec 2024 – Present",
-    company: "Sirasia Technologies Pvt Ltd",
+    date: "Nov 2024 – Present",
+    company: "FSG IT SOLUTIONS PRIVATE LIMITED",
     role: "Software Application Developer",
     description:
       "Developed and maintained Spring Boot microservices for payment processing, integrated banking APIs, and optimized real-time transactions using Apache Kafka.",
   },
   {
-    date: "March 2024 – Dec 2024",
-    company: "Wells Fargo (IDP Project)",
+    date: "Sep 2024 – May 2024",
+    company: "EFUND TECHNICAL SERVICES PRIVATE LIMITED",
     role: "Software Application Developer",
     description:
-      "Worked on event-driven architecture with Kafka, PostgreSQL, and microservices, enhancing developer services with CI/CD automation.",
+      "Built financial services applications, integrated payment gateways, and designed scalable APIs using Spring Boot and PostgreSQL.",
   },
   {
-    date: "March 2022 – Feb 2024",
-    company: "Sirasia Technologies Pvt Ltd",
+    date: "Jan 2023 – Nov 2024",
+    company: "Dataknol Private Limited",
     role: "Software Associate",
     description:
-      "Built financial services applications, integrated payment gateways, and designed scalable APIs using Spring Boot and PostgreSQL.",
+      "Worked on event-driven architecture with Kafka, PostgreSQL, and microservices, enhancing developer services with CI/CD automation.",
   },
 ];
 
