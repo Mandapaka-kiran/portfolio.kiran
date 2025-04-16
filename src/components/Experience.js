@@ -5,9 +5,16 @@ const experiences = [
   {
     date: "Nov 2024 – Present",
     company: "FSG IT SOLUTIONS PRIVATE LIMITED",
-    role: "Software Application Developer",
+    role: "Software Engineer",
     description:
       "Developed and maintained Spring Boot microservices for payment processing, integrated banking APIs, and optimized real-time transactions using Apache Kafka.",
+  },
+  {
+    date: "May 2024 – Oct 2024",
+    company: "Dataknol Private Limited(Wells Fargo)",
+    role: "Software Application Developer",
+    description:
+      "A developer portal offering accelerators and managed services for streamlined development lifecycles.",
   },
   {
     date: "Sep 2023 – May 2024",
@@ -17,11 +24,18 @@ const experiences = [
       "Built financial services applications, integrated payment gateways, and designed scalable APIs using Spring Boot and PostgreSQL.",
   },
   {
-    date: "Jan 2023 – Nov 2024",
+    date: "Jan 2023 – Oct 2024",
     company: "Dataknol Private Limited",
     role: "Software Associate",
     description:
-      "Worked on event-driven architecture with Kafka, PostgreSQL, and microservices, enhancing developer services with CI/CD automation.",
+      "A liquidity management solution tailored for the banking sector, enabling real-time cash flow visibility and optimized fund utilization.",
+  },
+  {
+    date: "Oct 2022 – Dec 2022",
+    company: "ADIVERSE TECHNOLOGIES LLP",
+    role: "Software Developer",
+    description:
+      "A cloud application that automates the end-to-end accreditation and ranking process for universities, Autonomous & Affiliated collages in India.",
   },
 ];
 
